@@ -9,7 +9,9 @@ const WorkoutDetails = ({ workout }) => {
     const json = await respone.json();
 
     if (respone.ok) {
-      dispatch({ type: "DELETE_WORKOUT", payload: { _id: workout._id } });
+      console.log(json);
+
+      dispatch({ type: "DELETE_WORKOUT", payload: json });
     }
   };
 
