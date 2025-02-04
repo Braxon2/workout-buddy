@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 //components
 import WorrkoutDetails from "../components/WorkoutDetails";
@@ -18,7 +18,7 @@ const Home = () => {
     };
 
     fetchWorkouts();
-  }, []);
+  }, [dispatch]);
   return (
     <div className="home">
       <div className="workouts">
